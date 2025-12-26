@@ -1,4 +1,5 @@
-# App Review Trend Analysis Agent
+# Senior AI Engineer Assignment – App Review Trend Analysis
+
 
 ## Problem Statement
 App store reviews are a goldmine of user feedback, but manually tracking trends across thousands of daily reviews is impossible. Product teams need a way to see "what's trending" (e.g., "Login failing after update") in real-time. This system uses AI agents to process reviews, extract topics, and track their volume over a rolling 30-day window.
