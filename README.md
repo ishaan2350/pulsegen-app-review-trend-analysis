@@ -12,6 +12,8 @@ The system is built as a pipeline of specialized agents:
 3.  **Deduplication Agent**: Maps new extracted topics to a canonical "Topic Memory" to ensure "App crashing" and "Crahsed app" are counted as the same trend.
 4.  **Evolution Agent**: Identifies truly new topics that haven't been seen before and registers them.
 5.  **Trend Agent**: Aggregates counts and produces the final rolling window report.
+The final output is a tabular trend report where rows represent canonical topics and columns represent dates from T-30 to T. Each cell contains the frequency of that topic on the given day. The report is exported as a CSV for easy consumption by product teams.
+
 
 ## Design Decisions
 -   **Recall over Precision**: We prefer to surface a potential issue even if the label is slightly noisy, rather than burying a critical bug.
